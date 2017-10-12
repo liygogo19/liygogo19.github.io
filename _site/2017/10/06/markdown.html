@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Markdown - lee.young's blog</title>
+<meta name="description" content="A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).">
+<link rel="canonical" href="/2017/10/06/markdown.html">
+<link rel="alternate" type="application/rss+xml" title="lee.young's blog" href="/feed.xml">
+
+        <!--
+    for Safari on iOS
+    https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/
+-->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/statics/images/logo/icon-180x180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/statics/images/logo/icon-167x167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/statics/images/logo/icon-152x152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/statics/images/logo/icon-120x120.png">
+<link rel="shortcut icon" href="/statics/images/logo/icon-120x120.png">
+
+<!--
+    for Chrome on Android
+    https://developer.chrome.com/multidevice/android/installtohomescreen
+-->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="/statics/images/logo/icon-192x192.png">
+
+<!--
+    for Edge on Windows 10
+    https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx
+-->
+<meta name="msapplication-TileImage" content="/statics/images/logo/icon-144x144.png">
+<meta name="msapplication-square310x310logo" content="/statics/images/icon-310x310.png">
+<meta name="msapplication-wide310x150logo" content="/statics/images/icon-310x150.png">
+<meta name="msapplication-square150x150logo" content="/statics/images/icon-150x150.png">
+<meta name="msapplication-square70x70logo" content="/statics/images/icon-70x70.png">
+<meta name="msapplication-TileColor" content="#eeeeee">
+        <link rel="stylesheet" href="/statics/css/blog.css">
+        <style>
+            
+            
+        </style>
+        <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="m-page-stage js-page-stage">
+            <div class="m-post m-page-content">
+    <div class="m-page-main">
+        <header class="m-page-header main clearfix">
+    <a class="site-title" title="lee.young's Blog"
+        href="/">lee.young's blog
+    </a>
+    <div class="site-logo">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#666666;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+    </div>
+    <nav class="site-nav">
+        <ul class="clearfix">
+            <li><a href="/">Home</a></li>
+            <li><a href="/all.html?tag=">All</a></li>
+            
+                <li><a href="/about.html"> About </a></li>
+            
+            <li><a type="application/rss+xml" href="/feed.xml">RSS</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <div class="main">
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+                <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage"/>
+                <header class="article-header">
+                    <h1 itemprop="headline" class="article-title" itemprop="name headline">Markdown</h1>
+                    <div class="m-article-data clearfix">
+	
+        <meta itemprop="author" itemscope itemtype="https://schema.org/Person">
+            
+                <meta itemprop="name" content="lee.young"/>
+            
+        </meta>
+	
+
+	
+	
+        <div class="tag-wrapper">
+            
+            <a class="article-tag round-rect-button" href="/all.html?tag=blog"> blog </a>
+            
+        </div>
+	
+    <div class="other-wrapper">
+        <div class="view-wrapper clearfix">
+            <span class="article-view" id="post-key-10001">0</span>
+            views |
+        </div>
+        <div class="date-wrapper">
+            
+                <time class="article-meta" datetime="2017-10-06T00:00:00+08:00" itemprop="datePublished">
+                    Oct 6, 2017
+                </time>
+            
+        </div>
+    </div>
+</div>
+
+                </header>
+
+                <div class="m-article-content js-article-content" itemprop="articleBody">
+                    <p>A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).</p>
+
+<!--more-->
+
+<ul>
+  <li><a href="#block-elements">Block Elements</a>
+    <ul>
+      <li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+      <li><a href="#headers">Headers</a></li>
+      <li><a href="#blockquotes">Blockquotes</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#code-blocks">Code Blocks</a></li>
+      <li><a href="#horizontal-rules">Horizontal Rules</a></li>
+      <li><a href="#table">Table</a></li>
+    </ul>
+  </li>
+  <li><a href="#span-elements">Span Elements</a>
+    <ul>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#emphasis">Emphasis</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#strikethrough">Strikethrough</a></li>
+    </ul>
+  </li>
+  <li><a href="#miscellaneous">Miscellaneous</a>
+    <ul>
+      <li><a href="#automatic-links">Automatic Links</a></li>
+      <li><a href="#backslash-escapes">Backslash Escapes</a></li>
+    </ul>
+  </li>
+  <li><a href="#inline-html">Inline HTML</a></li>
+</ul>
+
+<h2 id="block-elements">Block Elements</h2>
+
+<h3 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h3>
+
+<h4 id="paragraphs">Paragraphs</h4>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;p&gt;</code></p>
+
+<p>One or more blank lines. (A blank line is a line containing nothing but <strong>spaces</strong> or <strong>tabs</strong> is considered blank.)</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This will be
+inline.
+
+This is second paragraph.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>This will be
+inline.</p>
+
+<p>This is second paragraph.</p>
+
+<hr />
+
+<h4 id="line-breaks">Line Breaks</h4>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;br /&gt;</code></p>
+
+<p>End a line with <strong>two or more spaces</strong>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This will be not
+inline.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>This will be not
+inline.</p>
+
+<hr />
+
+<h3 id="headers">Headers</h3>
+
+<p>Markdown supports two styles of headers, Setext and atx.</p>
+
+<h4 id="setext">Setext</h4>
+
+<p>HTML Tags: <code class="highlighter-rouge">&lt;h1&gt;</code>, <code class="highlighter-rouge">&lt;h2&gt;</code></p>
+
+<p>“Underlined” using <strong>equal signs (=)</strong> as <code class="highlighter-rouge">&lt;h1&gt;</code> and <strong>dashes (-)</strong> as <code class="highlighter-rouge">&lt;h2&gt;</code> in any number.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This is an H1
+=============
+This is an H2
+-------------
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<h1 id="this-is-an-h1">This is an H1</h1>
+
+<h2 id="this-is-an-h2">This is an H2</h2>
+
+<hr />
+
+<h4 id="atx">atx</h4>
+
+<p>HTML Tags: <code class="highlighter-rouge">&lt;h1&gt;</code>, <code class="highlighter-rouge">&lt;h2&gt;</code>, <code class="highlighter-rouge">&lt;h3&gt;</code>, <code class="highlighter-rouge">&lt;h4&gt;</code>, <code class="highlighter-rouge">&lt;h5&gt;</code>, <code class="highlighter-rouge">&lt;h6&gt;</code></p>
+
+<p>Uses 1-6 <strong>hash characters (#)</strong> at the start of the line, corresponding to <code class="highlighter-rouge">&lt;h1&gt;</code> - <code class="highlighter-rouge">&lt;h6&gt;</code>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># This is an H1
+## This is an H2
+###### This is an H6
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<h1 id="this-is-an-h1-1">This is an H1</h1>
+
+<h2 id="this-is-an-h2-1">This is an H2</h2>
+
+<h6 id="this-is-an-h6">This is an H6</h6>
+
+<hr />
+
+<p>Optionally, you may “close” atx-style headers. The closing hashes <strong>don’t need to match</strong> the number of hashes used to open the header.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># This is an H1 #
+## This is an H2 ##
+### This is an H3 ######
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<h1 id="this-is-an-h1-2">This is an H1</h1>
+
+<h2 id="this-is-an-h2-2">This is an H2</h2>
+
+<h3 id="this-is-an-h3">This is an H3</h3>
+
+<hr />
+
+<h3 id="blockquotes">Blockquotes</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;blockquote&gt;</code></p>
+
+<p>Markdown uses email-style <strong>&gt;</strong> characters for blockquoting. It looks best if you hard wrap the text and put a &gt; before every line.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&gt;
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&gt; id sem consectetuer libero luctus adipiscing.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+
+<hr />
+
+<p>Markdown allows you to be lazy and only put the &gt; before the first line of a hard-wrapped paragraph.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+
+<blockquote>
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+
+<hr />
+
+<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by adding additional levels of &gt;.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; This is the first level of quoting.
+&gt;
+&gt; &gt; This is nested blockquote.
+&gt;
+&gt; Back to the first level.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<blockquote>
+  <p>This is the first level of quoting.</p>
+
+  <blockquote>
+    <p>This is nested blockquote.</p>
+  </blockquote>
+
+  <p>Back to the first level.</p>
+</blockquote>
+
+<hr />
+
+<p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt; ## This is a header.
+&gt;
+&gt; 1.   This is the first list item.
+&gt; 2.   This is the second list item.
+&gt;
+&gt; Here's some example code:
+&gt;
+&gt;     return shell_exec("echo $input | $markdown_script");
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<blockquote>
+  <h2 id="this-is-a-header">This is a header.</h2>
+
+  <ol>
+    <li>This is the first list item.</li>
+    <li>This is the second list item.</li>
+  </ol>
+
+  <p>Here’s some example code:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>return shell_exec("echo $input | $markdown_script");
+</code></pre>
+  </div>
+</blockquote>
+
+<hr />
+
+<h3 id="lists">Lists</h3>
+
+<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+
+<h4 id="unordered">Unordered</h4>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;ul&gt;</code></p>
+
+<p>Unordered lists use <strong>asterisks (*)</strong>, <strong>pluses (+)</strong>, and <strong>hyphens (-)</strong>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*   Red
+*   Green
+*   Blue
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<hr />
+
+<p>is equivalent to:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>+   Red
++   Green
++   Blue
+</code></pre>
+</div>
+
+<p>and:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-   Red
+-   Green
+-   Blue
+</code></pre>
+</div>
+
+<h4 id="ordered">Ordered</h4>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;ol&gt;</code></p>
+
+<p>Ordered lists use numbers followed by periods:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1.  Bird
+2.  McHale
+3.  Parish
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ol>
+  <li>Bird</li>
+  <li>McHale</li>
+  <li>Parish</li>
+</ol>
+
+<hr />
+<p>It’s possible to trigger an ordered list by accident, by writing something like this:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1986. What a great season.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ol>
+  <li>What a great season.</li>
+</ol>
+
+<hr />
+
+<p>You can <strong>backslash-escape (\)</strong> the period:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1986\. What a great season.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>1986. What a great season.</p>
+
+<hr />
+
+<h4 id="indented">Indented</h4>
+
+<h5 id="blockquote">Blockquote</h5>
+
+<p>To put a blockquote within a list item, the blockquote’s &gt; delimiters need to be indented:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*   A list item with a blockquote:
+
+    &gt; This is a blockquote
+    &gt; inside a list item.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p>A list item with a blockquote:</p>
+
+    <blockquote>
+      <p>This is a blockquote
+inside a list item.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="code-block">Code Block</h5>
+
+<p>To put a code block within a list item, the code block needs to be indented twice — <strong>8 spaces</strong> or <strong>two tabs</strong>:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*   A list item with a code block:
+
+        &lt;code goes here&gt;
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p>A list item with a code block:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>&lt;code goes here&gt;
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="nested-list">Nested List</h5>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* A
+  * A1
+  * A2
+* B
+* C
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<ul>
+  <li>A
+    <ul>
+      <li>A1</li>
+      <li>A2</li>
+    </ul>
+  </li>
+  <li>B</li>
+  <li>C</li>
+</ul>
+
+<hr />
+
+<h3 id="code-blocks">Code Blocks</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;pre&gt;</code></p>
+
+<p>Indent every line of the block by at least <strong>4 spaces</strong> or <strong>1 tab</strong>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This is a normal paragraph:
+
+    This is a code block.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>This is a normal paragraph:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This is a code block.
+</code></pre>
+</div>
+
+<hr />
+
+<p>A code block continues until it reaches a line that is not indented (or the end of the article).</p>
+
+<p>Within a code block, <strong><em>ampersands (&amp;)</em></strong> and angle <strong>brackets (&lt; and &gt;)</strong> are automatically converted into HTML entities.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    &lt;div class="footer"&gt;
+        &amp;copy; 2004 Foo Corporation
+    &lt;/div&gt;
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<hr />
+
+<p>Following sections Fenced Code Blocks and Syntax Highlighting are extensions, you can use the other way to write the code block.</p>
+
+<h4 id="fenced-code-blocks">Fenced Code Blocks</h4>
+
+<p>Just wrap your code in <code class="highlighter-rouge">```</code> (as shown below) and you won’t need to indent it by four spaces.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Here's an example:
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>Here’s an example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function test() {
+  console.log("notice the blank line before this function?");
+}
+</code></pre>
+</div>
+
+<hr />
+
+<h4 id="syntax-highlighting">Syntax Highlighting</h4>
+
+<p>In your fenced block, add an optional language identifier and we’ll run it through syntax highlighting (<a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">Support Languages</a>).</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="nb">require</span> <span class="s1">'redcarpet'</span>
+<span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">markdown</span><span class="p">.</span><span class="nf">to_html</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;hr /&gt;</code>
+Places <strong>three or more hyphens (-), asterisks (*), or underscores (_)</strong> on a line by themselves. You may use spaces between the hyphens or asterisks.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* * *
+***
+*****
+- - -
+---------------------------------------
+___
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+
+<hr />
+
+<h3 id="table">Table</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;table&gt;</code></p>
+
+<p>It’s an extension.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Separates column by **pipe (</td>
+      <td>)** and header by <strong>dashes (-)</strong>, and uses <strong>colon (:)</strong> for alignment.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The outer **pipes (</td>
+      <td>)** and alignment are optional. There are <strong>3 delimiters</strong> each cell at least for separating header.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>| Left | Center | Right |
+|:-----|:------:|------:|
+|aaa   |bbb     |ccc    |
+|ddd   |eee     |fff    |
+
+ A | B
+---|---
+123|456
+
+
+A |B
+--|--
+12|45
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Left</th>
+      <th style="text-align: center">Center</th>
+      <th style="text-align: right">Right</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">aaa</td>
+      <td style="text-align: center">bbb</td>
+      <td style="text-align: right">ccc</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ddd</td>
+      <td style="text-align: center">eee</td>
+      <td style="text-align: right">fff</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>123</td>
+      <td>456</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>45</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="span-elements">Span Elements</h2>
+
+<h3 id="links">Links</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;a&gt;</code></p>
+
+<p>Markdown supports two style of links: inline and reference.</p>
+
+<h4 id="inline">Inline</h4>
+
+<p>Inline link format like this: <code class="highlighter-rouge">[Link Text](URL "Title")</code></p>
+
+<p>Title is optional.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This is [an example](http://example.com/ "Title") inline link.
+
+[This link](http://example.net/) has no title attribute.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>This is <a href="http://example.com/" title="Title">an example</a> inline link.</p>
+
+<p><a href="http://example.net/">This link</a> has no title attribute.</p>
+
+<hr />
+
+<p>If you’re referring to a local resource on the same server, you can use relative paths:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>See my [About](/about/) page for details.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>See my <a href="/about/">About</a> page for details.</p>
+
+<hr />
+
+<h4 id="reference">Reference</h4>
+
+<p>You could predefine link references. Format like this: <code class="highlighter-rouge">[id]: URL "Title"</code></p>
+
+<p>Title is also optional. And the you refer the link, format like this: <code class="highlighter-rouge">[Link Text][id]</code></p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[id]: http://example.com/  "Optional Title Here"
+This is [an example][id] reference-style link.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>This is <a href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
+
+<hr />
+
+<p>That is:</p>
+
+<ul>
+  <li>Square brackets containing the link identifier (<strong>not case sensitive</strong>, optionally indented from the left margin using up to three spaces);</li>
+  <li>followed by a colon;</li>
+  <li>followed by one or more spaces (or tabs);</li>
+  <li>followed by the URL for the link;</li>
+  <li>The link URL may, optionally, be surrounded by angle brackets.</li>
+  <li>optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.</li>
+</ul>
+
+<p>The following three link definitions are equivalent:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+[foo]: &lt;http://example.com/&gt;  "Optional Title Here"
+</code></pre>
+</div>
+
+<p>Uses an empty set of square brackets, the link text itself is used as the name.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[Google]: http://google.com/
+[Google][]
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><a href="http://google.com/">Google</a></p>
+
+<hr />
+
+<h3 id="emphasis">Emphasis</h3>
+
+<p>HTML Tags: <code class="highlighter-rouge">&lt;em&gt;</code>, <code class="highlighter-rouge">&lt;strong&gt;</code></p>
+
+<p>Markdown treats <em>*asterisks (</em>)** and <strong>underscores (_)</strong> as indicators of emphasis. <strong>One delimiter</strong> will be  <code class="highlighter-rouge">&lt;em&gt;</code>; <em>*double delimiters</em> will be <code class="highlighter-rouge">&lt;strong&gt;</code>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><em>single asterisks</em></p>
+
+<p><em>single underscores</em></p>
+
+<p><strong>double asterisks</strong></p>
+
+<p><strong>double underscores</strong></p>
+
+<hr />
+
+<p>But if you surround an * or _ with spaces, it’ll be treated as a literal asterisk or underscore.</p>
+
+<p>You can backslash escape it:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>\*this text is surrounded by literal asterisks\*
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>*this text is surrounded by literal asterisks*</p>
+
+<hr />
+
+<h3 id="code">Code</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;code&gt;</code></p>
+
+<p>Wraps it with <strong>backtick quotes (`)</strong>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Use the `printf()` function.
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>Use the <code class="highlighter-rouge">printf()</code> function.</p>
+
+<hr />
+
+<p>To include a literal backtick character within a code span, you can use <strong>multiple backticks</strong> as the opening and closing delimiters:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>``There is a literal backtick (`) here.``
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">There is a literal backtick (`) here.</code></p>
+
+<hr />
+
+<p>The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>A single backtick in a code span: <code class="highlighter-rouge">`</code></p>
+
+<p>A backtick-delimited string in a code span: <code class="highlighter-rouge">`foo`</code></p>
+
+<hr />
+
+<h3 id="images">Images</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;img /&gt;</code></p>
+
+<p>Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.</p>
+
+<h4 id="inline-1">Inline</h4>
+
+<p>Inline image syntax looks like this: <code class="highlighter-rouge">![Alt text](URL "Title")</code></p>
+
+<p>Title is optional.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><img src="/path/to/img.jpg" alt="Alt text" /></p>
+
+<p><img src="/path/to/img.jpg" alt="Alt text" title="Optional title" /></p>
+
+<hr />
+
+<p>That is:</p>
+
+<ul>
+  <li>An exclamation mark: !;</li>
+  <li>followed by a set of square brackets, containing the alt attribute text for the image;</li>
+  <li>followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.</li>
+</ul>
+
+<h4 id="reference-1">Reference</h4>
+
+<p>Reference-style image syntax looks like this: <code class="highlighter-rouge">![Alt text][id]</code></p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[img id]: url/to/image  "Optional title attribute"
+![Alt text][img id]
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><img src="url/to/image" alt="Alt text" title="Optional title attribute" /></p>
+
+<hr />
+
+<h3 id="strikethrough">Strikethrough</h3>
+
+<p>HTML Tag: <code class="highlighter-rouge">&lt;del&gt;</code></p>
+
+<p>It’s an extension.</p>
+
+<p>GFM adds syntax to strikethrough text.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~~Mistaken text.~~
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><del>Mistaken text.</del></p>
+
+<hr />
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<h3 id="automatic-links">Automatic Links</h3>
+
+<p>Markdown supports a shortcut style for creating “automatic” links for URLs and email addresses: simply surround the URL or email address with angle brackets.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;http://example.com/&gt;
+
+&lt;address@example.com&gt;
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><a href="http://example.com/">http://example.com/</a></p>
+
+<p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;</a></p>
+
+<hr />
+<p>GFM will autolink standard URLs.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>https://github.com/emn178/markdown
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>https://github.com/emn178/markdown</p>
+
+<hr />
+
+<h3 id="backslash-escapes">Backslash Escapes</h3>
+<p>Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>\*literal asterisks\*
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p>*literal asterisks*</p>
+
+<hr />
+
+<p>Markdown provides backslash escapes for the following characters:</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
+</code></pre>
+</div>
+
+<h2 id="inline-html">Inline HTML</h2>
+
+<p>For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>This is a regular paragraph.
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Foo&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+This is another regular paragraph. Preview:
+</code></pre>
+</div>
+
+<hr />
+
+<p>This is a regular paragraph.</p>
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+<p>This is another regular paragraph.</p>
+
+<hr />
+
+<p>Note that Markdown formatting syntax is <strong>not processed within block-level HTML tags</strong>.</p>
+
+<p>Unlike block-level HTML tags, Markdown syntax is <strong>processed within span-level tags</strong>.</p>
+
+<p>Code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;span&gt;**Work**&lt;/span&gt;
+
+&lt;div&gt;
+    **No Work**
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<p>Preview:</p>
+
+<hr />
+
+<p><span><strong>Work</strong></span></p>
+
+<div>
+  **No Work**
+</div>
+
+<hr />
+
+                </div>
+
+                <footer>
+                    
+                    <meta itemprop="dateModified" content="2017-10-06T00:00:00+08:00">
+                    
+                    <div class="article-license">
+                        <div class="m-license">
+    <div class="clearfix">
+        
+        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license.</p>
+        <a class="cc-license" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License"src="/statics/images/license-cc4.png" /></a>
+        <p>欢迎转载，转载需注明出处：<a class="url" href="/2017/10/06/markdown.html">
+            /2017/10/06/markdown.html
+        </a>，且禁止用于商业目的。</p>
+    </div>
+</div>
+
+                    </div>
+                </footer>
+                
+                <section></section>
+                
+            </article>
+        </div>
+    </div>
+    <aside class="m-article-aside">
+        <div class="m-toc js-toc"></div>
+    </aside>
+</div>
+
+<script src="//cdn.bootcss.com/toc/0.3.2/toc.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // toc //
+        $(".js-toc").toc({
+            'selectors': 'h1,h2,h3',
+            'container': '.js-article-content',
+        });
+    });
+</script>
+
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // 初始化
+            AV.init({
+                appId: '',
+                appKey: ''
+            });
+            // 查询
+            var query = new AV.Query('');
+            query.equalTo('key', '10001');
+            query.first().then(function(result) {
+                if (result) {
+                    addOne(result)
+                } else {
+                    //新建
+                    var Blog = AV.Object.extend('');
+                    var blog = new Blog();
+                    blog.set('title', 'Markdown');
+                    blog.set('key', '10001');
+                    blog.set('views', 0);
+                    blog.save().then(function(page) {
+                        addOne(page)
+                    }, function(error) {
+                        if (error) {
+                            throw error;
+                        }
+                    });
+                }
+
+                function addOne(page) {
+                    page.increment('views', 1);
+                    page.fetchWhenSave(true);
+                    page.save().then(function(page) {
+                        $("#post-key-10001").text(page.attributes.views);
+                    }, function(error) {
+                        if (error) {
+                            throw error;
+                        }
+                    });
+                }
+            }, function(error) {
+                if (error) {
+                    throw error;
+                }
+            });
+        });
+    </script>
+
+
+        </div>
+        <div class="m-page-footer js-page-footer">
+    <div class="main">
+        <aside class="follow-me">
+            <div class="follow-me">
+    <div>
+        <ul class="clearfix" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="lee.young">
+            <link itemprop="url" href="/">
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+    </div>
+</div>
+
+        </aside>
+        <footer class="site-info">
+            <p>© lee.young's blog 2015 - 2017</p>
+            <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.</p>
+            </p>
+        </footer>
+    </div>
+</div>
+
+        <script src="//cdn.bootcss.com/emojione/2.2.6/lib/js/emojione.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // display coding language //
+                $(".highlight").each(function() {
+                    $(this).attr("data-lang", $(this).find("code").attr("data-lang"));
+                });
+                // picture lazy load //
+                // $(".article-content img").each(function(){
+                //     $(this).attr('data-src', $(this).attr('src'));
+                // });
+                // $(".article-content img").unveil();
+                //
+                $(".m-article-content").each(function() {
+                    var original = $(this).html();
+                    emojione.imageType = 'svg';
+                    var converted = emojione.toImage(original);
+                    $(this).html(converted);
+                });
+            });
+        </script>
+        
+            
+        
+    </body>
+</html>
