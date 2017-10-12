@@ -2,7 +2,7 @@
 title: '李阳的个人博客'
 description: ''
 keyword: '李阳, 李阳的独立博客, 李阳的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs'
-url: 'http://127.0.0.1:4000' # your host
+url: 'https://liygogo19.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: '/'
