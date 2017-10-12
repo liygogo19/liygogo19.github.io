@@ -2,7 +2,7 @@
 
 ### Preview
 
-#### [在线预览 Live Demo →](http://liaokeyu.com/)
+#### [在线预览 Live Demo →](https://liaokeyu.com/)
 
 ![](screenshot/jekyll-theme-h2o-realhome.jpg)
 
@@ -50,7 +50,7 @@ Using your smartphone to scan the QR Code
 
 ### Usage 快速开始 
 
-首先你需要安装Jekyll，请查看文档: [快速指南](http://jekyll.com.cn/docs/quickstart/)
+首先你需要安装Jekyll，请查看文档: [快速指南](https://jekyll.com.cn/docs/quickstart/)
 
 如果你已经安装了Jekyll，请检查版本是否为3.0.x，你可以使用 ```gem update jekyll``` 命令进行升级。
 
@@ -124,7 +124,7 @@ You can easily get started by modifying _config.yml
 title: '廖柯宇的独立博客' # 你的博客网站标题
 description: '很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
 keyword: '廖柯宇, 廖柯宇的独立博客, 前端, 设计' # 网站关键词
-url: 'http://liaokeyu.com' # 站点url 
+url: 'https://liaokeyu.com' # 站点url
 baseurl: ''
  
 # Build settings 
@@ -145,7 +145,7 @@ title: 'H2O theme for Jekyll'
 subtitle: '或许是最漂亮的Jekyll主题'
 date: 2017-04-18
 categories: 技术
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
+cover: 'https://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
 tags: jekyll 前端开发 设计
 ---
 ```
@@ -259,11 +259,11 @@ search: true
 
 #### 代码高亮
 
-模板引入了[Prism.js](http://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
+模板引入了[Prism.js](https://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
 
 很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
 
-![代码高亮](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png)
+![代码高亮](https://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png)
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
@@ -363,7 +363,7 @@ postPatterns: 'circuitBoard'
 
 如果你喜欢折腾，想对模板的代码进行修改，需要使用命令 `npm install` 安装 `package.json` 中的依赖，然后 `gulp` 一下即可开始你的自定义之旅。
 
-在了解H2O主题的目录结构之前，确保你对[Jekyll目录结构](http://jekyll.com.cn/docs/structure/)有所了解。
+在了解H2O主题的目录结构之前，确保你对[Jekyll目录结构](https://jekyll.com.cn/docs/structure/)有所了解。
 
 ```		
 	.
@@ -421,7 +421,7 @@ disqus_url: 'https://你的disqus账户名.disqus.com/embed.js'
 
 #### Share.js
 
-为了让文章更方便地分享，使用了第三方分享插件[Share.js](http://overtrue.me/share.js/)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
+为了让文章更方便地分享，使用了第三方分享插件[Share.js](https://overtrue.me/share.js/)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
 
 ```
 # Share
