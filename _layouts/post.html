@@ -68,14 +68,14 @@
     <section class="post-footer-item read-next">
         {% if page.next.url %}
         <div class="read-next-item">
-            <a href="{{ page.next.url }}" class="read-next-link"></a>
+            <a href="/{{ page.next.url }}" class="read-next-link"></a>
             <section>
                 <span>{{ page.next.title }}</span>
                 <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
             </section>
             {% if page.next.cover %}
             <div class="filter"></div>
-            <img src="{{ page.next.cover }}" alt="">
+            <img src="/{{ page.next.cover }}" alt="">
             {% endif %}
         </div>
         {% endif %}
@@ -88,7 +88,7 @@
             </section>
             {% if page.previous.cover %}
             <div class="filter"></div>
-            <img src="{{ page.previous.cover }}" alt="">
+            <img src="/{{ page.previous.cover }}" alt="">
             {% endif %}
         </div>
         {% endif %}
